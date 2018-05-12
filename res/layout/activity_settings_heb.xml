@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="32.32"
+        android:background="@drawable/backgroundwhite_clock"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="הגדרת יום עבודה "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="526.85" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.94"
+                android:text="יום עבודה בסוף שבוע"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/radioButtonWeekEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="יום עבודה רגיל"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RadioButton
+                android:id="@+id/radioButtonOrdinary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="201dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtNetoHoursTitle"
+                android:layout_marginTop="25dp"
+                android:text="שעות נוספות 125%"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editTextNetoHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editTextOV1"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/spinnerBreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/SpinnerWeekendDays"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/editTextOV1"
+                android:layout_below="@+id/editTextOV1"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_centerInParent="false"
+                android:gravity="center"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editTextOV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignParentLeft="true"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/SpinnerWeekendDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/spinnerBreak"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="21dp"
+                android:text="הגדרת ימי סוף שבוע"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtNetoHoursTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:text="שעות נטו"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="משך הפסקת"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_weight="577.51"
+            android:gravity="bottom"
+            android:text="שכר"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="655.30" >
+
+            <RadioButton
+                android:id="@+id/radioButtonGlobal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            <RadioButton
+                android:id="@+id/radioButtonHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/radioButtonGlobal" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radioButtonHours"
+                android:layout_alignBottom="@+id/radioButtonHours"
+                android:layout_toLeftOf="@+id/radioButtonHours"
+                android:text="שעתי"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radioButtonGlobal"
+                android:layout_alignBottom="@+id/radioButtonGlobal"
+                android:layout_toLeftOf="@+id/radioButtonGlobal"
+                android:text="גלובאלי"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editTexSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView2"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="177.49"
+            android:gravity="bottom"
+            android:text="נסיעות"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp" >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editTextTransportation"
+                android:layout_alignBottom="@+id/editTextTransportation"
+                android:layout_alignParentRight="true"
+                android:text="דמי נסיעה חודשי"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editTextTransportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

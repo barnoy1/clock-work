@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClockWork</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_Day ">Days</string>
+    <string name="working_day_conf">Working Day Configuration</string>
+  	<string name="ad_unit_id">xxx</string>
+
+</resources>

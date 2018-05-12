@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <group android:id="@+id/group1" android:visible="true">
+            <item android:id="@+id/itemMail" 
+                  android:title="שלח דוח שעות למייל" android:showAsAction="never"></item>
+            <item android:id="@+id/itemChangeMail" 
+                  android:title="שנה כתובת מייל" android:showAsAction="never"></item>
+            <item android:id="@+id/itemChangeLanguage"></item>
+        </group>
+        
+        <group android:id="@+id/group2">
+            <item android:id="@+id/itemPrev" 
+                  android:drawable="@drawable/ic_prev"	
+                  android:showAsAction="always"></item>
+        </group>
+        
+      	<group android:id="@+id/group3">
+            <item android:id="@+id/itemNext" 
+                  android:drawable="@drawable/ic_next"	
+                  android:showAsAction="always"></item>
+        </group>
+      	<group android:id="@+id/group4">
+      		<item android:id="@+id/itemFastPrev" android:showAsAction="always"></item>
+      	</group>
+      	
+    </menu>
